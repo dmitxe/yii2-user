@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use yii\bootstrap\Nav;
+use yii\bootstrap5\Nav;
 
 /**
  * @var \yii\web\View $this
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-body">
                 <?= Nav::widget([
                     'options' => [
-                        'class' => 'nav-pills nav-stacked',
+                        'class' => 'nav nav-pills flex-column',
                     ],
                     'items' => [
                         [

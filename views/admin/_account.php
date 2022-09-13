@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-use yii\bootstrap\ActiveForm;
+use yii\bootstrap5\ActiveForm;
 use yii\helpers\Html;
 
 /**
@@ -34,8 +34,10 @@ use yii\helpers\Html;
 <?= $this->render('_user', ['form' => $form, 'user' => $user]) ?>
 
 <div class="form-group">
-    <div class="col-lg-offset-3 col-lg-9">
-        <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success']) ?>
+    <div class="offset-sm-2 col-lg-9">
+        <div class="d-grid">
+            <?= Html::submitButton(Yii::t('user', 'Update'), ['class' => 'btn btn-block btn-success']) ?>
+        </div>
     </div>
 </div>
 

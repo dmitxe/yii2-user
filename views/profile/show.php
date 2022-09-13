@@ -28,7 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     'alt' => $profile->user->username,
                 ]) ?>
             </div>
-            <div class="col-sm-6 col-md-8">
+            <div class="col-sm-6 col-md-8 ps-sm-5">
                 <h4><?= $this->title ?></h4>
                 <ul style="padding: 0; list-style: none outside none;">
                     <?php if (!empty($profile->location)): ?>

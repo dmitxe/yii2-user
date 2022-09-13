@@ -9,8 +9,8 @@
  * file that was distributed with this source code.
  */
 
-use yii\bootstrap\ActiveForm;
-use yii\bootstrap\Nav;
+use yii\bootstrap5\ActiveForm;
+use yii\bootstrap5\Nav;
 use yii\helpers\Html;
 
 /**
@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="panel-body">
                 <?= Nav::widget([
                     'options' => [
-                        'class' => 'nav-pills nav-stacked',
+                        'class' => 'nav nav-pills flex-column',
                     ],
                     'items' => [
                         ['label' => Yii::t('user', 'Account details'), 'url' => ['/user/admin/create']],
@@ -71,8 +71,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $this->render('_user', ['form' => $form, 'user' => $user]) ?>
 
                 <div class="form-group">
-                    <div class="col-lg-offset-3 col-lg-9">
-                        <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success']) ?>
+                    <div class="offset-sm-2 col-lg-9">
+                        <div class="d-grid">
+                            <?= Html::submitButton(Yii::t('user', 'Save'), ['class' => 'btn btn-block btn-success']) ?>
+                        </div>
                     </div>
                 </div>
 
